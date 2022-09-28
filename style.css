@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%); 
+    font-size: 14px;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    width: 327px;
+    height: 580px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img{
+    background-image: url('./images/image-product-mobile.jpg');
+    background-size: cover;
+    width: 327px;
+    height: 240px;
+    margin: 0px auto;
+    border-radius: 10px 10px 0 0;
+}
+.text-wrap{
+    padding: 1.5em;
+    text-align: left;
+}
+.gab{
+    margin-top: 0.5em;
+    width: 80%;
+}
+.text{
+    margin-top: 0.7em;
+    line-height: 1.5;
+}
+.text-wrap p{
+    font-family: Montserrat ;
+    color:  hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 1.4em;
+}
+.price p{
+    text-decoration: line-through;
+}
+.price h1{
+    color: #3d8168;
+    font-size: large;
+}
+h1{
+    font-family: Fraunces;
+}
+p{
+    font-family: Montserrat;
+}
+.btn{
+    width: 95%;
+    padding: 1.2em;
+    background-color: #3d8168;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+.attribution {
+    font-size: 14px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+@media only screen and (min-width: 600px) {
+    .container{
+        display: flex;
+        width: 650px;
+        height: 420px;
+    }
+    .img{
+        background-image: url('./images/image-product-desktop.jpg');
+        height: 420px;
+        border-radius: 10px 0 0 10px;
+    }
+    .gab{
+        width: 90%;
+        font-size: 30px;
+    }
+    .text{
+        width: 90%;
+        margin-top: 1.7em;
+    }
+    .text-wrap{
+        padding: 1.4em;
+    }
+}
